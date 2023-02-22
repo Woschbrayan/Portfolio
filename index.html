@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Chamando CDN do boxixon-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!--Chamando CDN do Bootstrap 5.3-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   
+    <!--chamando CSS-->
     <link rel="stylesheet" href="style.css">
+
     <title>Portfolio</title>
 </head>
 
 <body>
 
-<!--HEADER DA PAGINA-->
+<!--HEADER DA PAGINA
+    PRIMEIRO CONTAINER  -->
     <div class="header">
-        <ul type="none">
-            <li style="color: white;"> <a href="#projeto"> Projetos</a></li>
-            <li style="color: white;"><a href="#sobre">Sobre</a></li>
-            <li style="color: white;"><a href="#curriculo">Currículo</a></li>
+        <ul type="none" id="myform">
+            <li> <a href="#projeto"> Projetos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#curriculo">Currículo</a></li>
         </ul>
         
     </div>
 
-<!--Primeiro container 
-    Frase de Ola e img-->
     <div class="container">
         <div class="informa">
             <div class="textPrincipal" style="margin-top: 5%;">
@@ -36,11 +42,11 @@
                     Se tiver interesse entre em contato...</p>
 
                     <ul type="none" style="column-gap: 10%; margin:0; padding: 4%;">
-                        <li><a href="https://wa.me/qr/3JX4XXRPJLYAP1 "><i class='bx bxl-whatsapp' style='color:#c0c0c0; font-size: 30px;'> </i></a></li>
-                        <li><a href="https://www.facebook.com/people/Brayan-Wosch/100073240022989/?mibextid=ZbWKwL"><i class='bx bxl-facebook-square'  style='color:#c0c0c0; font-size: 30px;'></i></a></li>
-                        <li><a href="https://www.instagram.com/bwoschs_/"><i class='bx bxl-instagram'  style='color:#c0c0c0; font-size: 30px;'></i></a></li>
-                       <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class='bx bxl-gmail' style='color:#c0c0c0; font-size: 30px;' ></i></a></li>
-                       <li><a href="https://github.com/Woschbrayan"><i class='bx bxl-github' style='color:#c0c0c0; font-size: 30px;' ></i></a></li>
+                        <li><a href="https://wa.me/qr/3JX4XXRPJLYAP1 " target="_blank"><i class='bx bxl-whatsapp'> </i></a></li>
+                        <li><a href="https://www.facebook.com/people/Brayan-Wosch/100073240022989/?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-square' ></i></a></li>
+                        <li><a href="https://www.instagram.com/bwoschs_/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                       <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class='bx bxl-gmail'></i></a></li>
+                       <li><a href="https://github.com/Woschbrayan" target="_blank"><i class='bx bxl-github'></i></a></li>
                     </ul>
                 </div>
             
@@ -50,130 +56,170 @@
         </div> 
     </div>
 
+    
+    
 <!--Linha de divisa-->
-<div class="line">
-    <p style="font-size: 2px; color: #c0c0c0;">_</p>
-</div>
+    <div class="containerdiv">
+        <div class="line">
+            <p style="font-size: 2px; color: #c0c0c0;">_</p>
+        </div>
+    </div>
 
  <!--Container Projetos
     Onde mostra projetos do github-->
 
-<h2 id="projeto"style="color: white; text-align: center; margin-top: 10%; font-style: italic; text-decoration: underline;">PROJETOS</h2>
-<div class="containerdiv">
+    <h2 id="projeto"style="color: white; text-align: center; margin-top: 10%; font-style: italic;">PROJETOS</h2>
+    <div class="containerdiv">
+        <div class="containerprojetos">
+            <div class="row">
+                <a href="https://github.com/Woschbrayan/TesteCarletto">
+                    <div class="col">
+                        TesteCarletto
+                    </div>
+                 </a>
+                <p style="color: white; padding: 6%;">
+                    Este Arquivo é um teste referente a empresa CarlettoFrotas <br>
 
-    <div class="containerprojetos">
+                    Front End- HTML, CSS, BOOTSTRAP e JS Back End- PHP, JS, JQUERY e SQL <br>
 
-        <div class="row">
-            <a href="https://github.com/Woschbrayan/TesteCarletto">
-            <div class="col">
-                TesteCarletto <br>
-                HTML - CSS - JS<br>
-                PHP - BOOTSTRAP
-            </div>
-        </a>
-            <p style="color: white; padding: 6%;">
-                Este Arquivo é um teste referente a empresa CarlettoFrotas <br>
-
-                Front End- HTML, CSS, BOOTSTRAP e JS Back End- PHP, JS, JQUERY e SQL <br>
-
-                O Teste consiste em implementar uma aplicação Web utilizando a linguagem de sua escolha<br>
-                e um banco de dados relacional SQLite, MySQL ou Postgres, a partir de uma modelagem de dados inicial desnormalizada,<br>
-                que deve ser normalizada para a implementação da solução. <br> <br>
+                    O Teste consiste em implementar uma aplicação Web utilizando a linguagem de sua escolha<br>
+                    e um banco de dados relacional SQLite, MySQL ou Postgres, a partir de uma modelagem de dados inicial desnormalizada,<br>
+                    que deve ser normalizada para a implementação da solução. <br> <br>
+                        
+                    Tecnologias indispensaveis para o teste: <br>
                     
-                Tecnologias indispensaveis para o teste: <br>
+                    HTML<br>
+                    Bootstrap<br>
+                    CSS<br>
+                    Javascript<br>
+                    GitHub
+                </p>
+                <a href="https://github.com/Woschbrayan/Canal-Licitacao">
+                    <div class="col">
+                        Canal-Licitação
+                    </div>
+                </a>
+                <p style="color: white; padding: 6%;">
+                    O projeto foi inspirado no sistema Canal de licitação, onde foi criado com o intuito de gerenciar licitações. <br>
+                    esse sistema de licitação foi realizado com o framework ScriptCase(Ferramenta Lowcode). <br>
+                    Ferramenta que limitava algumas funções em expecifca utilizando o metodo POO. <br> <br>
+
+                    Nesse projeto foi utilizado HTML, CSS, JS e PHP com a ajuda do framework BootsTrap V5.0. <br>
+                    Utilizando uma criptografia de senha para acesso do login, e o metodo POO em php para realizar conexões com DataBase e orientação do sistema. <br>
+                    
+                    sistema base: <a href=" https://canaldelicitacoes.com.br/" style="color: white; margin: 0;">https://canaldelicitacoes.com.br/</a><br><br>
+                    HTML<br>
+                    Bootstrap<br>
+                    CSS<br>
+                    Javascript<br>
+                    GitHub
+                </p>
                 
-                HTML<br>
-                Bootstrap<br>
-                CSS<br>
-                Javascript<br>
-                GitHub
-            </p>
-        <a href="https://github.com/Woschbrayan/Canal-Licitacao">
-            <div class="col">
-                Canal-Licitação <br>
-                HTML - CSS - JS<br>
-                PHP - BOOTSTRAP
             </div>
-        </a>
-            <p style="color: white; padding: 6%;">
-                O projeto foi inspirado no sistema Canal de licitação, onde foi criado com o intuito de gerenciar licitações. <br>
-                esse sistema de licitação foi realizado com o framework ScriptCase(Ferramenta Lowcode). <br>
-                Ferramenta que limitava algumas funções em expecifca utilizando o metodo POO. <br> <br>
-
-                Nesse projeto foi utilizado HTML, CSS, JS e PHP com a ajuda do framework BootsTrap V5.0. <br>
-                Utilizando uma criptografia de senha para acesso do login, e o metodo POO em php para realizar conexões com DataBase e orientação do sistema. <br>
-                
-                sistema base: <a href=" https://canaldelicitacoes.com.br/" style="color: white; margin: 0;">https://canaldelicitacoes.com.br/</a>
-            </p>
-            
         </div>
-        
-
     </div>
-</div>
 
+  
 <!--Linha de divisa-->
-      <div class="line">
-        <p style="font-size: 2px; color: #c0c0c0;">_</p>
-   </div>
+        <div class="containerdiv">
+        <div class="line">
+            <p style="font-size: 2px; color: #c0c0c0;">_</p>
+        </div>
+    </div>
 
 <!--Container de Sobre
     Onde fala sobre algumas informações pessoais-->
 
+<h2 id="sobre" style="color: white; text-align: center; margin-top: 10%; font-style: italic;">SOBRE</h2>
+    <div class="containerdiv">
+        <div class="containerSobre">
+            <div class="textsobre">
+                <p style="color: white; margin-top: 5%;">
 
+                Eu sou Brayan Wosch, Atualmente tenho 18 anos, moro com meus pais e meu irmão <br>
+                Eu sou uma pessoa facil de lidar, pois estou sempre disposto adptar-se independede da situação <br>
+                Tenho muito foco no objetivo e força de vontade<br> 
+                Possuo facilidade para aprender e entusiasmo para crescer junto com a <br>
+                empresa. Busco o meu primeiro emprego no setor administrativo e acredito que posso contribuir com a organização. <br>
+                Possuo ampla experiência na área de tecnologia da informação e estou em busca de melhorar minhas habilidades profissionais. <br><br>
+                
+                Busco uma vaga de emprego na area de desenvolvimento de software backend/frontend <br>
+                Nos ultimos 5 meses desenvolvi um sistema de licitações <br>
+                O projeto foi inspirado no sistema Canal de licitação, onde foi criado com o intuito de gerenciar licitações. <br>
+                esse sistema de licitação foi realizado com o framework ScriptCase(Ferramenta Lowcode). <br>
+                Ferramenta que limitava algumas funções em expecifca utilizando o metodo POO. <br> <br>
 
-      <h2 id="sobre" style="color: white; text-align: center; margin-top: 10%; font-style: italic; text-decoration: underline;">SOBRE</h2>
-      <div class="containerdiv">
-      <div class="containerSobre">
-        <div class="textsobre">
-           <p style="color: white; margin-top: 5%;">
-            Eu sou Brayan Wosch, Atualmente tenho 18 anos, moro com meus pais e meu irmão <br>
-            Eu sou uma pessoa facil de lidar, pois estou sempre disposto adptar-se independede da situação <br>
-            Tenho muito foco no objetivo e força de vontade<br> 
-            Possuo facilidade para aprender e entusiasmo para crescer junto com a <br>
-            empresa. Busco o meu primeiro emprego no setor administrativo e acredito que posso contribuir com a organização. <br>
-            Possuo ampla experiência na área de tecnologia da informação e estou em busca de melhorar minhas habilidades profissionais. <br><br>
-             
-            Busco uma vaga de emprego na area de desenvolvimento de software backend/frontend <br>
-            Nos ultimos 5 meses desenvolvi um sistema de licitações <br>
-            O projeto foi inspirado no sistema Canal de licitação, onde foi criado com o intuito de gerenciar licitações. <br>
-            esse sistema de licitação foi realizado com o framework ScriptCase(Ferramenta Lowcode). <br>
-            Ferramenta que limitava algumas funções em expecifca utilizando o metodo POO. <br> <br>
+                Linguagens de conhecimento: <br>
+                HTML <br>
+                CSS <br>
+                JS <br>
+                PHP(POO) <br> <br>
 
-            Linguagens de conhecimento: <br>
-            HTML <br>
-            CSS <br>
-            JS <br>
-            PHP(POO) <br> <br>
+                frameworks:
+                bootstrap <br>
+                scriptcase <br>
+                jquery <br>
 
-            frameworks:
-            bootstrap <br>
-            scriptcase <br>
-            jquery <br>
-
-        </p>
+                </p> 
         </div>
       </div>
     </div>
 
-
 <!--Container onde mostra o curriculo-->
-      <div class="containerCurricolo">
-        <div class="curricilo">
-            <h2 id="curriculo" style="color: white; text-align: center; margin-top: 10%; font-style: italic; text-decoration: underline;">Currículo</h2>
-   
-            <div class="imgcurriculo">
-                <img src="curriculo.png" alt="" srcset="" style="box-shadow: 2px 5px 10px 2px rgb(0 0 0 / 57%);">
-            </div>
-            <div class="baixar">
+      <div class="containerCurriculo">
+        <div class="curriculo">
+            <h2 id="curriculo" style="color: white; text-align: center; margin-top: 10%; font-style: italic;">Currículo</h2>
+            <div class="txtCurriculo" style="padding: 10%;">
+                <p style="color: white;">
+                    BRAYAN WOSCH <br>
+                    brayanwosch@hotmail.com<br>
+                    (041) 99899-8431 <br>
+                    (041)99616-2973<br>
+                    Curitiba/PR Rua Padre Paulo Caneles, Santa Cândida 82720350<br>
+                </p>
+                <p style="color: white;">
+                    FORMAÇÃO <br>
+                    Cursando período da manhã terceiro ano ensino médio <br>
+                    Colégio Estadual Santa Cândida <br>
+                    Conclusão 2021<br>
+    
+                 </p>   
+                    
+                 <p style="color: white;">
+                    RESUMO PROFISSIONAL<br>
+                    Comprometimento em atendimento e auxilio ao cliente, profissional responsável, confiável e <br>
+                    atencioso, com disposição a aplicar novos conhecimentos.<br>
+                </p>
+                
+                <p style="color: white;">
+                    HISTORICO PROFISSIONAL<br>
+                    Romance Favorita Atendente de balcão e direto ao cliente.<br>
+                    • Criação e condução de promoções de vendas e estratégias de divulgação para 
+                    aumentar os lucros e atrair novos clientes <br>
+                    • Desenvolvimento e manutenção de relacionamento duradouros com cliente<br>
+                    • Entrega de troco e dinheiro e processamento de pagamentos em cartões de debito e <br>
+                    credito com uma taxa de exatidão de %<br>
+                    
+                </p>
+    
+                <div class="competencias">
+                    <p style="color: white;">
+                        COMPETÊNCIAS<br>
+                        • Comunicação e negociações agilidade em digitalização<br>
+                        • Assistência ao cliente Microsoft Office<br>
+                        • Flexibilidade automotivação e determinaçã<br>
+                    </p>
 
-                <a href="BrayanWoschCurriculo.pdf" target="iframe_download">Baixar Currículo</a>
             </div>
-           
         </div>
-      </div>
-
-      
+  
+    <div class="containerdiv">          
+        <div class="baixarCurriculo">
+            <i class='bx bxs-download'></i><a href="BrayanWoschCurriculo.pdf" target="iframe_download" style="color:#c0c0c0; margin: 5%;">Baixar Currículo</a>         
+        </div>
+    </div>          
+    </div>
+</div>     
 
 </body>
 </html>
