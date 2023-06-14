@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    background:linear-gradient(95deg,#000000, #4e4e4e,#5e5e5e,#727272 );
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins';
+    font-size: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ESTILIZANDO SCORLL*/
+    body::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background:linear-gradient(45deg,#000000, #3b3b3b,#636363,#888787 );
+        background-size: 300% 300%;
+        animation: colors 10s ease infinite;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color:  rgb(73, 73, 73);
+        border-radius: 15px;
+    }
+
+
+/*ESTILIZAÇÃO DO HEADER*/
+    .header{
+        width: 100%;
+        margin: 0;
+        position: relative;
+        height: 40px;
+        display: flex;
+    }
+
+    ul{
+        display: flex;
+        margin-left: 5%;
+        padding: 6px;
+        column-gap: 30px;
+        animation: opaci 4s forwards;
+    }
+
+    li{
+        font-size: 20px;
+        transition-duration: .3s;
+    }
+
+    li:hover{
+        transition-duration: .3s;
+        font-size:22px ;
+        cursor: pointer;
+        color: white;
+    }
+    .container{
+        width: 100vw;
+        height: 50vh;
+        background:#292929b0;;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0;
+        border: 0;
+    }
+
+    .imgMe{
+        width: 30%;
+        height: 401px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .imgMe img{
+        border-radius: 4px;
+        width: 50%;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+
+    .informa{
+        display: flex;
+        justify-content: center;
+        column-gap: 20%;
+    }
+
+    .line{
+        width: 50%;
+        height: 1px;
+        background-color: #c0c0c0;
+        margin-top: 10%;
+        animation: linee 4s ease-in-out infinite;
+    }
+
+
+/*ESTILIAZAÇÃO DO CONTAINER DE PROJETOS*/
+    .containerprojetos{
+        width: 50vw;
+        height: 150vh;
+        display: inline-flex;
+        background: #292929b0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0;
+        border: 0;
+        box-shadow: 2px 5px 10px 2px rgb(0 0 0 / 57%);
+    }
+
+    .row{
+        width: 40vw;
+        position: relative;
+        margin-top: auto;
+
+    }
+
+    .col{
+        color: white;
+        border-color: white;
+        border-style: solid;
+        height: 30px;
+        border-radius: 15px;
+        transition-duration: .3s;
+        text-align: center;
+    }
+
+    .col:hover{
+        transition-duration: .3s;
+        height:32px;
+        border-color: rgb(188, 188, 188);
+        font-size:18px;
+    }
+
+
+/*CONTAINER REFENTE SOBRE*/
+    .containerSobre{
+        width: 100vw;
+        height: 100vh;
+        display: inline-flex;
+        background: #292929b0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0;
+        border: 0;
+
+    }
+
+/*CONTAINER CURRICULO*/
+    .containerCurriculo{
+        width: 98vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        padding: 0;
+        border: 0;
+
+    }
+
+    .curriculo{
+        width: 50vw;
+        display: grid;
+        height: 125vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0;
+        border: 0;
+        background: #292929b0;
+    }
+
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+
+    .bx{
+        color:#c0c0c0;
+        font-size: 30px;
+        transition-duration: .3s;
+    }
+
+    .bx:hover{
+        transition-duration: .3s;
+        font-size: 34px;
+    }
+/*CONTAINER BAIXAR CURRICULO*/
+    .baixarCurriculo{
+        width: 30%;
+        height: 60px;
+        text-align: center;
+    }
+
+    .baixarCurriculo:hover{
+        transition-duration: .3s;
+        font-size: 20px;
+    }
+
+    .containerdiv{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin: 5%;
+    }
+
+/*KEYFRAMES*/
+
+    @keyframes linee
+    {
+        0%{
+        width: 35%;
+        }
+        50%{
+        width: 50%;
+        }
+        100%{
+            width: 35%;
+        }
+    }
+
+
+    @keyframes floatImage
+    {
+        0%{
+            transform: translatey(0);
+
+        }
+        50%{
+            transform: translateY(-20px);
+
+        }
+        100%{
+            transform: translateY(0);
+
+        }
+
+
+    }
+
+    @keyframes opaci{
+        0%{
+        opacity: 0;
+        }
+
+        100%{
+        }
+    }
+
+    @keyframes colors{
+        0%{
+            background-position:0% 50% ;
+        }
+        50%
+        {
+            background-position:100% 50% ;
+        }
+        100%{
+            background-position:0% 50% ;
+        }
+    }
